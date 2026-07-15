@@ -1,0 +1,37 @@
+{
+  "name": "slidev-theme-filip",
+  "version": "1.0.0",
+  "description": "FILIP — an editorial-motion-graphics Slidev theme. Vox-style editorial motion meets a retro-computing-museum aesthetic: paper & ink, one spot of voltage, flat hard-edged borders, CRT scanlines.",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "theme",
+    "editorial",
+    "retro",
+    "presentation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "slidev": ">=0.48.0"
+  },
+  "slidev": {
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": 1280,
+      "transition": "vox",
+      "highlighter": "shiki"
+    },
+    "colorSchema": "light"
+  },
+  "scripts": {
+    "dev": "slidev example.md --open",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/types": "^0.49.0",
+    "playwright-chromium": "^1.61.1"
+  }
+}

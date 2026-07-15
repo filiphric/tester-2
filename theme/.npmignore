@@ -1,0 +1,7 @@
+node_modules
+dist
+export
+screenshots
+example.md
+.gitignore
+.slidev
