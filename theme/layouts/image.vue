@@ -24,7 +24,7 @@ defineProps({
   dim: { type: String, default: '2400 × 1350' },
   /** placeholder color: '' | 'rust' | 'sega' | 'screen' | 'amber' */
   placeholder: { type: String, default: 'rust' },
-  kicker: { type: String, default: '▸ On location' },
+  kicker: { type: String, default: '' },
   mark: { type: String, default: 'tl' },
   brand: { type: String, default: 'FILIP HRIC' },
   raw: { type: Boolean, default: false },

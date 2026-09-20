@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["node", "vite/client"]
+  },
+  "include": ["env.d.ts", "composables/**/*.ts", "shared/**/*.ts", "partykit/**/*.ts", "setup/vite-plugins.ts"]
+}

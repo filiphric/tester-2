@@ -5,3 +5,11 @@ dist
 .vite-inspect
 .remote-assets
 components.d.ts
+.env
+.env.*
+!.env.example
+.partykit
+.wrangler
+test-results
+playwright-report
+.reactions-test-dist

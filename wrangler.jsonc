@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tester-2-reactions",
+  "account_id": "a317bc4fb42ae4f25fb1d250ad812410",
+  "main": "cloudflare/worker.ts",
+  "compatibility_date": "2026-09-18",
+  "workers_dev": true,
+  "durable_objects": {
+    "bindings": [{ "name": "Main", "class_name": "Main" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Main"] }]
+}

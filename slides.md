@@ -15,41 +15,34 @@ transition: none
 comark: true
 duration: 60min
 layout: cover
-kicker: ▸ AI writes code
-footerLeft: "[pro:]TEST!"
+kicker: ''
+footerLeft: STARWest
 footerRight: '2026'
 ---
 
-# Who will guarantee <span class="ds-mark">the quality</span>?
+# Tester 2.0
+
+<p class="kick" style="font-size: 22px; line-height: 1.35; margin-top: -30px; white-space: nowrap;">Becoming Indispensable in the Age of AI</p>
+
+<LiveJoin />
+
+<!--
+- let me take you on a time travel journey
+-->
 
 ---
-src: ./pages/trusting-ai.md
----
-
----
-src: ./pages/fixing-the-radio.md
----
-
----
-src: ./pages/how-llms-work.md
----
-
----
-src: ./pages/building-verification-learning.md
+src: ./pages/intro.md
 ---
 
 ---
-src: ./pages/verification-without-tests.md
+src: ./pages/three-lies.md
 ---
 
 ---
-src: ./pages/qodo-architecture.md
+src: ./pages/constraints.md
+disabled: true
 ---
 
 ---
-src: ./pages/from-verification-to-governance.md
----
-
----
-src: ./pages/closing.md
+src: ./pages/things-to-abandon.md
 ---
