@@ -39,7 +39,7 @@ watch([visible, joinUrl], async ([show, url], _, onCleanup) => {
 </template>
 
 <style scoped>
-.live-join { position: absolute; right: 48px; top: 40px; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 184px; padding: 12px; border: 2px solid var(--ink); background: var(--card); box-shadow: 4px 4px 0 var(--ink); text-decoration: none; color: var(--ink) !important; }
+.live-join { position: fixed; right: 48px; top: 40px; display: flex; flex-direction: column; align-items: center; gap: 8px; width: 184px; padding: 12px; border: 2px solid var(--ink); background: var(--card); box-shadow: 4px 4px 0 var(--ink); text-decoration: none; color: var(--ink) !important; }
 .join-title { font: 700 13px var(--font-mono, monospace); letter-spacing: .08em; }
 .join-url { font: 10px/1.4 var(--font-mono, monospace); text-align: center; overflow-wrap: anywhere; max-width: 100%; }
 .live-join:focus-visible { outline: 3px solid var(--signal); outline-offset: 4px; }

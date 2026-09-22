@@ -6,6 +6,8 @@ mark: none
 raw: true
 ---
 
+<LiveJoin />
+
 <!--
 - we’ll move to 17th century Europe 
 - it’s the dawn of technology, companies are being formed, forming global trade, we see commerce taking off
@@ -25,6 +27,8 @@ mark: none
 raw: true
 ---
 
+<LiveJoin />
+
 <!--
 - it’s your average supermarket spices aisle
 - seeing this would be absolutely jaw dropping
@@ -41,8 +45,8 @@ layout: center
 # <Highlighter>Why?</Highlighter>
 
 <!--
+- to our ears this must sound ridiculous
 - why would they think that? 
-- to our eyes, this must sound ridiculous - why would you not be impressed by the fact that we have world’s knowledge at our fingertips, or that we can talk to people on the other side of the world?
 - mostly, because a 17th century person looks at the world through a 17th century’s person’s lens
 - scarcity of something like spices and the resulting value of them, makes that person think that having lots of spices makes the society incredibly rich
 - so why am I talking about all this? because I think that these months, we have a lot of common with that 17th century era person - we are witnessing that something that was incredibly expensive, has become now incredibly abundant

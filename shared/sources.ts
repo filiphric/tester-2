@@ -90,6 +90,46 @@ export const sourceGroups = [
     ],
   },
   {
+    id: 'qa-other-professions',
+    title: 'QA in other professions',
+    slides: 'SLIDE 26',
+    summary: 'Quality engineering in physical products requires specialist technical knowledge',
+    period: 'Research notes · Aerospace, automotive manufacturing, and hardware QA',
+    note: 'The research notes cite the IMI listing for aerospace qualifications, JobDescription.org for manufacturing and measurement systems, and Kevin Thompson’s hardware case study for the need for domain expertise. The Formula 1, amusement-park, and rocket-testing examples have no direct citations in the supplied material. The IMI listing could not be independently retrieved when these sources were added.',
+    links: [
+      {
+        title: 'Quality Engineer — aerospace role cited in the research notes',
+        publisher: 'Institute of the Motor Industry · Jobs listing · Retrieval unavailable',
+        url: 'https://jobs.theimi.org.uk/mim-jobs/quality-engineer-25',
+      },
+      {
+        title: 'Quality Engineer Job Description',
+        publisher: 'JobDescription.org · Manufacturing, automotive quality tools, and measurement systems',
+        url: 'https://jobdescription.org/jobs/manufacturing/quality-engineer',
+      },
+      {
+        title: 'Hardware Quality Assurance Differs from Software',
+        publisher: 'Kevin Thompson · LinkedIn · Thermo Fisher Scientific case study',
+        url: 'https://www.linkedin.com/posts/kevinthompsonphd_lessonslearned-agilehardware-v6pdf-activity-7486111085314482176-zBRE',
+      },
+    ],
+  },
+  {
+    id: 'llms-reward-expertise',
+    title: 'LLMs reward expertise',
+    slides: 'SLIDE 27',
+    summary: 'Domain expertise helps users ask better questions, evaluate answers, and get more value from LLMs',
+    period: '24 July 2026 · Essay on domain expertise and LLM use',
+    note: 'Using Terence Tao’s conversation with ChatGPT and his own programming experience, Goedecke argues that experts can identify relevant ideas, challenge weak answers, and suggest better approaches. The article supports the slide’s point that domain knowledge improves how people use LLMs; it is an essay based on examples and experience, not a controlled study.',
+    links: [
+      {
+        title: 'LLMs reward expertise',
+        publisher: 'Sean Goedecke · 24 July 2026',
+        url: 'https://www.seangoedecke.com/llms-reward-expertise/',
+      },
+    ],
+  },
+  {
     id: 'keith-klain-test-automation',
     title: 'Keith Klain on test automation',
     slides: 'SLIDE 30',

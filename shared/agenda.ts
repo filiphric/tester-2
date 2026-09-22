@@ -12,16 +12,15 @@ export const agenda = {
     items: [
       'Avoiding technical expertise',
       'Framing "Critical thinking" as the only important tool',
-      'Treating test automation as the only important tool',
-      'Acting as gatekeepers',
+      'Treating test automation as the only important tool'
     ],
   },
   strengths: {
     title: 'Our strengths',
     items: [
       'Quality-first approach to software delivery',
-      'Code quality and code Governance',
-      'Strength 3',
+      'Governance of software systems',
+      'Turning uncertainty into experiments',
     ],
   },
 } as const

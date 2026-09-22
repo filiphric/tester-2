@@ -13,9 +13,22 @@ test('phone reactions reach the deck once, survive navigation, and mute across p
   await showControls(page)
   await expect(page.getByRole('button', { name: 'Reactions off' })).toBeVisible()
   expect(sockets).toHaveLength(0)
+  page.once('dialog', dialog => dialog.dismiss())
   await page.getByRole('button', { name: 'Reactions off' }).click()
-  await expect(page.locator('.live-join')).toHaveAttribute('href', 'https://slides.filiphric.com/tester-2/live?room=rehearsal')
-  await expect(page.locator('.live-join img')).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Reactions off' })).toHaveAttribute('aria-pressed', 'false')
+
+  page.once('dialog', async (dialog) => {
+    page.once('dialog', alert => alert.dismiss())
+    await dialog.accept('incorrect')
+  })
+  await page.getByRole('button', { name: 'Reactions off' }).click()
+  await expect(page.getByRole('button', { name: 'Reactions off' })).toHaveAttribute('aria-pressed', 'false')
+
+  page.once('dialog', dialog => dialog.accept('K2jk-1dns'))
+  await page.getByRole('button', { name: 'Reactions off' }).click()
+  const joinLink = page.getByRole('link', { name: /REACT LIVE/ })
+  await expect(joinLink).toHaveAttribute('href', 'https://slides.filiphric.com/tester-2/live?room=rehearsal')
+  await expect(joinLink.getByRole('img')).toBeVisible()
   await page.screenshot({ path: 'test-results/reactions-cover.png' })
   await expect.poll(() => sockets.length).toBe(1)
 
@@ -43,6 +56,7 @@ test('phone reactions reach the deck once, survive navigation, and mute across p
   const presenter = await context.newPage()
   await presenter.goto('/presenter/2?room=rehearsal')
   await showControls(presenter)
+  presenter.once('dialog', dialog => dialog.accept('K2jk-1dns'))
   await presenter.getByRole('button', { name: 'Reactions on' }).click()
   await expect(page.locator('.reaction-effects')).toHaveCount(0)
   await audience.getByRole('button', { name: 'Send Brilliant reaction' }).click()
@@ -55,6 +69,7 @@ test('phone reactions reach the deck once, survive navigation, and mute across p
 test('room isolation, reconnect, reduced motion, and export remain correct', async ({ page, context, browser }) => {
   await page.goto('/1?room=isolated')
   await showControls(page)
+  page.once('dialog', dialog => dialog.accept('K2jk-1dns'))
   await page.getByRole('button', { name: 'Reactions off' }).click()
 
   const audienceContext = await browser.newContext()

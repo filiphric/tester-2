@@ -16,9 +16,7 @@ const { liveRoute } = useAudienceLinks()
       </header>
       <AudienceNav />
       <div class="sources-intro">
-        <p class="sources-kicker">THE DATA BEHIND THE TALK</p>
-        <h1><mark>Sources</mark></h1>
-        <p class="sources-description">Reports, published estimates, and the context behind each claim. Follow the links to explore the evidence.</p>
+        <h1 class="ds-mark inline">Sources</h1>
       </div>
 
       <section v-for="group in sourceGroups" :key="group.id" :aria-labelledby="group.id" class="source-group">
@@ -39,7 +37,7 @@ const { liveRoute } = useAudienceLinks()
 
       <footer class="sources-footer">
         <RouterLink :to="liveRoute" class="back-to-live">← Back to live reactions</RouterLink>
-        <span>Sources retrieved 17–19 September 2026</span>
+        <span>Sources retrieved 17–20 September 2026</span>
       </footer>
     </div>
   </main>

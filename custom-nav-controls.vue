@@ -4,12 +4,21 @@ import { useReactionVisibility } from './composables/useReactionVisibility'
 
 const { host, room, validRoom, audienceUrl } = useReactionSession()
 const { enabled, toggle } = useReactionVisibility(host, room)
+const reactionsPassphrase = 'K2jk-1dns'
 
 function toggleReactions(event: MouseEvent) {
-  toggle()
   // Pointer clicks should return arrow-key control to the presentation.
   if (event.detail > 0)
     (event.currentTarget as HTMLElement).blur()
+
+  const passphrase = window.prompt('Enter the passphrase to toggle reactions:')
+  if (passphrase === null)
+    return
+  if (passphrase !== reactionsPassphrase) {
+    window.alert('Incorrect passphrase.')
+    return
+  }
+  toggle()
 }
 </script>
 

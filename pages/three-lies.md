@@ -220,21 +220,27 @@ layout: default
 - look - when times get uncertain, I think it feels reassuring to say "oh they’ll find out how much they needed use and they will come back crawling"
 -->
 
-
 ---
 layout: quote
 ---
 
 # We can’t build the future of testing on the hope that teams will fail without us.
 
-<v-click>
-– me, just now
-</v-click>
-
 <!--
 - But it leaves our future dependent on somebody else failing.
 - We can’t build the future of testing on the hope that teams will fail without us.
-- [click] if you’re wondering who said that, it was me, just now
+-->
+
+
+---
+layout: quote
+author: me, just now
+---
+
+# We can’t build the future of testing on the hope that teams will fail without us.
+
+<!--
+- if you’re wondering who said that, it was me, just now
 - I truly believe that we have have to make a better case for ourselves
 -->
 

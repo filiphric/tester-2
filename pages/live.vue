@@ -37,7 +37,7 @@ function react(emoji: Reaction) {
       </header>
       <AudienceNav />
       <section aria-labelledby="live-title">
-        <h1 id="live-title">What are you<br><span class="ds-mark">thinking?</span></h1>
+        <h1 id="live-title"><span class="ds-mark">React live</span></h1>
         <div class="reaction-grid">
           <button
             v-for="option in reactionOptions"
@@ -57,6 +57,17 @@ function react(emoji: Reaction) {
             <span class="connection-dot" aria-hidden="true" />{{ connectionLabel }}
           </div>
         </div>
+      </section>
+      <section class="live-social" aria-labelledby="live-social-title">
+        <h2 id="live-social-title">Connect with Filip</h2>
+        <nav class="live-social-links" aria-label="Filip Hric on social media">
+          <a href="http://www.linkedin.com/in/filip-hric" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <a href="https://twitter.com/filip_hric/" target="_blank" rel="noopener noreferrer">
+            Twitter / X <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
       </section>
       <footer class="live-footer"><span>TESTER 2.0</span><span>Session / {{ room }}</span></footer>
     </div>
@@ -85,6 +96,13 @@ h1 { font-size: clamp(44px, 9vw, 72px); font-weight: 900; line-height: 1.03; let
 .reaction-emoji { font-size: 38px; line-height: 1.2; }
 .reaction-label { font: 10px var(--font-mono, monospace); font-weight: 600; }
 .live-feedback { margin: 0; font: 12px/1.5 var(--font-mono, monospace); color: var(--ink-2); }
+.live-social { margin-top: 32px; padding-top: 24px; border-top: 2px solid var(--ink); }
+.live-social h2 { margin: 0 0 16px; font-size: 20px; font-weight: 800; line-height: 1.3; }
+.live-social-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.live-social-links a { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 48px; padding: 12px; border: 2px solid var(--ink); background: var(--card); box-shadow: 3px 3px 0 var(--ink); color: var(--ink); font-size: 16px; font-weight: 700; line-height: 1.5; text-decoration: none; }
+.live-social-links a span { color: var(--signal-deep); }
+.live-social-links a:hover { background: var(--highlighter); }
+.live-social-links a:focus-visible { outline: 3px solid var(--signal); outline-offset: 5px; }
 .live-footer { flex-wrap: wrap; margin-top: auto; padding-top: 24px; padding-bottom: 4px; font-size: 9px; line-height: 1.5; color: var(--ink-2); overflow-wrap: anywhere; }
 .live-effects { position: fixed; inset: 0; pointer-events: none; }
 @media (max-width: 360px) { .live-shell { padding-inline: 16px; } .reaction-grid { gap: 10px; } .live-tag { max-width: 95px; } }
