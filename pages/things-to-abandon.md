@@ -4,6 +4,10 @@ layout: default
 
 <AgendaColumns :revealed="{ lies: [1, 2, 3] }" />
 
+<!--
+- alright, now that we have covered the three lies that we like to test ourselves, let's talk about things that I believe we need to abandon if we want to get ready for the future.
+-->
+
 ---
 layout: default
 clicks: 1
@@ -16,8 +20,11 @@ clicks: 1
 <!--
 - I firmly believe that in 2026 we need to completely abandon the debate of whether testers should or shouldn’t become technical - of course they should
 - happy to see a lot of thumbs up, but I still encounter people in our field that are hesitant about understanding technical details of the software they test
-- the common argument is that getting too deep in technical knowledge might create a tunnel vision, or that one might lose the the unique perspective on system under test
-- it is fascinating to me how different QA is in software compared to other industries
+- the common argument is that getting too deep in technical knowledge might create a tunnel vision
+- or that one might lose the the unique perspective on system under test
+- or that understanding all the details might turn them into developer
+- I wholeheartedly disagree - I think that we’ve made a mistake by not demanding deep technical expertise from QAs
+- QA in software is one of the few professions where technical expertise is optional
 -->
 
 ---
@@ -62,36 +69,37 @@ layout: default
 </style>
 
 <!--
+- I sometimes like to take a look at QA in other professions - How does that look? What do you need to know?
 - [click] I’m a big fan of F1 - they have QA engineers that need to have an excellent understanding of engines, aerodynamics, physics, safety mechanism, fuel, electronics
-- we’re in disneyland - QA engineers for amusement parks need to have understanding of material science, safety systems, welding - they don’t get to "assess risk", they need to mathematically prove that the roller coaster doesn’t fail
-- and there are other great examples, like aviaton, space rockets, automotive manufacturing
+- [click] we’re in disneyland - QA engineers for amusement parks need to have understanding of material science, safety systems, welding - they don’t get to "assess risk", they need to mathematically prove that the roller coaster doesn’t fail
+- [click] [click] [click] and there are other great examples, like aviaton, space rockets, automotive manufacturing
 - there’s no debate on whether having a technical expertise would somehow create a tunnel vision or claims that it’s actually useful to treat is as a black box
 - I think we need to take our profession seriously and treat it as a technically demanding role
-
-Sources from the research material:
-- Aviation / aerospace qualifications: [Quality Engineer — IMI jobs listing](https://jobs.theimi.org.uk/mim-jobs/quality-engineer-25) (could not be independently retrieved).
-- Automotive / manufacturing and measurement systems: [Quality Engineer Job Description — JobDescription.org](https://jobdescription.org/jobs/manufacturing/quality-engineer).
-- Specialist engineering knowledge in hardware QA: [Hardware Quality Assurance Differs from Software — Kevin Thompson](https://www.linkedin.com/posts/kevinthompsonphd_lessonslearned-agilehardware-v6pdf-activity-7486111085314482176-zBRE).
-- The supplied material has no direct citations for the Formula 1, amusement-park, or rocket-testing examples.
 -->
 
 ---
 layout: center
+clicks: 1
 ---
 
-# <Highlighter>LLMs rewards expertise</Highlighter>
+# <Highlighter>We need experts</Highlighter>
 
-<!-- 
-- we are nowadays witnessing one of the most incredible tech inventions of our lives, maybe even of all time
-- and I feel like this is our time to shine
-- the tech desperately needs people that have a good understanding of how these LLMs work
-- we can point out million things that don’t work, but right now actually we need experts that can help us find ways that do work
-- and I think testers are very well equipped for that
-- exploratory testing techniques, experimenting, risk analysis and all of the instincts you have built over the years - put them together with deep technical understanding of how LLMs work, and companies will fight over for you
-- and not just companies, in fact AI rewards expertise - when you interact with an LLM, the quality of the input wil determine the quality of the output
+<!--
+- and this is not just something that’s going to help you now, it’s something that will help us all in the future
+- job tiles change - remember scrum masters?
+- but even with AI, even with all the changes that we face, one thing I believe is not going away
+- and that is a need for expertise
+- and it’s not just companies that seek expretise, in fact LLMs reward expertise - when you interact with an LLM, the quality of the input wil determine the quality of the output
 - watch a senior developer interact with AI and compare that to your casual vibe-coder, I think you will see the difference
--->
-
+- [click] so become an expert - And if I may offer a word of advice, become an expert in AI
+- the tech desperately needs people that have a good understanding of how agentic systems work - how to make them safe, how to build them with high quality
+- every company under the sun want to become AI first company, jump head-on into tokenmaxxing and then meet on post-mortem every tuesday because Claude Code ignored half of the requirements in the JIRA ticket
+- And that mostly happens because we deploy AI to teams that lack knowledge of how to properly verify its work
+- and I feel like this is our time to shine
+- but not just by pointing out things that don’t work, but right now actually we need experts that can help us find ways that do work
+- and I think testers are very well equipped for that, especially if they’re able to get deep technical knowledge of AI agents, agentic systems AI evaluations, harnesses, and so on
+- i think that if you can demonstrate good knowledge of agentic systems companies will fight over you
+ -->
 
 ---
 layout: default
@@ -118,13 +126,12 @@ layout: center
 
 ## <Highlighter>Critical thinking</Highlighter> is something you <span class="italic">build</span>, not something you <span class="italic">have</span>.
 
-<!-- 
+<!--
 - but more importantly, I think it’s important to frame critical thinking as something you build, rather than something you have
 - and this actually connects to my previous point about technical expertise
 - it you want to build your critical thinking, the number one way of how you improve it is learning new things - gathering new perspectives, uncovering your own biases, uncovering your own blind spots
-- that’s why I’m so firm on testers getting more technical
+- that’s why I’m so firm on testers getting more technical, broadening your horizons will help you build your critical thinking
 - If your critical thinking stops at the boundary of your own role, it's not really critical thinking, but self-preservation dressed up as a professional skill
-
 -->
 
 ---
@@ -200,69 +207,59 @@ layout: default
 - there’s actually a lot here, I’m naming just a few 
 - I think, that even if you remove the test automation completely, you can still get a good overview
 - after all, test automation promises a reduction of human effort, but what if there are other good ways to reduce human effort?
+- name things
+- these are all the things that we can look into and get some sort of quality signal - they may uncover regressions, requirement gaps, problems in code styling, UX issues and so on
+- previously, we could look at all of these manually and get some sense of whether a change in code is safe to release
+- nowadays, we can have agents look at all these quality signals and without ever running a single-end to-end test, give us back valuable pieces of information on quality
+-->
+
+---
+layout: default
+title: Generation and verification
+clicks: 4
+---
+
+<GenerationVerification />
+
+<!--
+- so the way I currently have things set up
+- is that I loosely split my flow into generation vs. verification
+- so my coding agent will take all these kinds of contexts in and create a feature
+- but because coding agents make mistakes, they have limited context windows, they don't always stick to the instructions and rules, sometimes ignore things that are written in the ticket, I need to verify them
+- the easiest way to verify it without running tests is to have a code review agent
+- and it's a separate agent, different model, and it's going to take a look at whether:
+- Rules were not being ignored
+- Ticket was fully implemented
+- Skills were used
+- Whether there were no bugs or security issues
+- and it also looks at the blas radius of the change, so e.g. whether the change in this repository is not breaking something in another repository
+
+-->
+
+---
+layout: default
+title: Review at every step
+clicks: 4
+---
+
+<ReviewAtEveryStep />
+
+<!--
+- and if we look at the two steps, generation and verification, if we do the verification just on the code review, the feedback loop is pretty wide
+- So it's much better to tighten it and to actually shift left and bring it to earlier stages of development
+- so instead of running that check on pull request, the same set of agents can be run locally before the code is committed
+  - and it can actually go even further
+  - the agent also review the plan generated by the agent, assessing if it’s solid and actually aligns with the current state of the codebase.
+  - and why stop at the plan, the same agent system can be applied to reviewing the ticket where requirements are defined and I can see how it holds up against the rest of the codebase.
+- so this is all without running a single test, taking in all of the signals and making an assessment on whether the change that’s being introduced actually holds
 -->
 
 ---
 layout: default
 ---
 
-# Multi-agent systems
-
-<v-clicks class="multi-agents-points">
-
-- find bugs
-- discover security issues
-- flag broken cross-repo contracts
-- reduce standards drifting
-- point documentation rot
-- find requirement gaps
-
-</v-clicks>
-
-<style>
-.multi-agents-points {
-  gap: 24px;
-  margin-block: auto;
-}
-
-.multi-agents-points li {
-  font-size: 40px;
-  line-height: 1.3;
-  padding-left: 1em;
-}
-
-.multi-agents-points li::before {
-  content: '';
-  font-size: inherit;
-  width: 0.3em;
-  height: 0.4em;
-  top: 0.65em;
-  transform: translateY(-50%);
-  background: var(--signal);
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
-</style>
-
-<!-- 
-- AI actually enabled this human effort reduction - we now have the ability to build agentic systems that take in all of these signals, and without ever running your code, 
-- [click] flag issues, bugs
-- [click] security holes
-- [click] flag broken cross-repository contracts
-- [click] your compliancem coding style, rules for your organization
-- [click] missing, outdated or otherwise faulty documentation
-- [click] when developing, pointing out missing features
--->
-
----
-layout: default
----
-
-# Qodo
-
-<!-- 
-- an example of this is company I work for, Qodo
-- we’re building an AI code quality and governance platform
-- we’ve got this thing called the context engine, and it is basically a robust multi agent system that take in all of the information I mentioned index it and then provide findings for each change you introduce to your codebase
-- you can get these findings on your PR, but you can actually take a shift left approach and get these findings to your uncommited code, or even before any code is written, so it for example takes a look at your ticket and say - you know what, the plan to implement this feature is wrong, you’re reinventing a wheel and there’s already a service in your codebase that you should reuse
-- so there are actually tools outside of test automation, that can be very helpful in delivering quality software
+<!--
+- and doing all this, I’m getting a much quicker feedback, and when eventually tests get ran, the change already went through multiple agentic checks
+- sorry to bring up the testing pyramid again, but I've seen many companies where currently the pyramid looks more like a mushroom because we have all of these amazing tools that help us write end-to-end tests, and we've overdone it
+- we now have way too many tests, it takes too long to run them and something needs to change
 -->

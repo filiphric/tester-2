@@ -37,7 +37,7 @@ const { liveRoute } = useAudienceLinks()
 
       <footer class="sources-footer">
         <RouterLink :to="liveRoute" class="back-to-live">← Back to live reactions</RouterLink>
-        <span>Sources retrieved 17–20 September 2026</span>
+        <span>Sources retrieved 17–22 September 2026</span>
       </footer>
     </div>
   </main>

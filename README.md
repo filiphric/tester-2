@@ -14,7 +14,7 @@ npm run reactions:dev
 npm run dev
 ```
 
-Open [the deck](http://localhost:3030/1?room=rehearsal), reveal the bottom controls, and click **Reactions off** to enable them. Open [the audience page](http://localhost:3030/live?room=rehearsal) in another browser or tab and tap an emoji. The **Audience ↗** control also opens the reaction page on the current deployment.
+Open [the deck](http://localhost:3030/1?room=rehearsal), reveal the bottom controls with **Cmd + Option + Control + P**, and click **Reactions off** to enable them. The shortcut focuses the first toolbar control so you can also navigate with Tab. The controls stay hidden on hover and disappear when focus leaves the toolbar. Open [the audience page](http://localhost:3030/live?room=rehearsal) in another browser or tab and tap an emoji. The **Audience ↗** control also opens the reaction page on the current deployment.
 
 Reactions start disabled. The toggle synchronizes between presenter and projected tabs on the same origin and room. Turning them off closes the receiving connection and clears the overlay. It does not disable audience submissions for everyone. Print, PDF export, and overview pages do not connect to the reaction service.
 

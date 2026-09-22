@@ -4,6 +4,10 @@ layout: default
 
 <AgendaColumns :revealed="{ lies: [1, 2, 3], abandon: [1, 2, 3] }" />
 
+<!--
+- so now that we have talked about three lives and things to abandon, let's now turn into our strengths. Let's talk about the things that ma help us become indispensible
+-->
+
 ---
 layout: default
 clicks: 1
@@ -157,4 +161,3 @@ clicks: 1
 - some frame testing as constant skepticism, but I like to think of it as constant curiosity
 - I can’t tell you exactly what our jobs will look like in five years. But the curiosity that brought me into this profession still gives me a reason to explore what comes next.
  -->
-

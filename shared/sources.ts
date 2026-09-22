@@ -46,7 +46,7 @@ export const sourceGroups = [
   },
   {
     id: 'manual-qa-hybrid',
-    title: 'Manual skills. Hybrid expectations.',
+    title: 'Manual-only demand is shrinking',
     slides: 'SLIDE 13',
     summary: '~38% still hire manual testers · API, SQL, and automation literacy',
     period: '2026 report · QA listing share and skill expectations',
@@ -60,9 +60,24 @@ export const sourceGroups = [
     ],
   },
   {
+    id: 'qa-workload-and-team-size',
+    title: 'Workload vs. team size',
+    slides: 'SLIDE 14',
+    summary: '64% report increased workload · 29% report increased team size',
+    period: 'State of Testing 2026 · Internet / Tech respondents',
+    note: 'The report gives 63.6% for increased workload and 28.5% for increased team size among Internet / Tech respondents. The chart rounds these shares to whole percentages. These are shares of survey respondents, not workload growth rates, hiring rates, or a census of QA jobs. The survey extends beyond manual-only roles; this industry subgroup does not establish a decline across all QA or show that AI caused the gap.',
+    links: [
+      {
+        title: 'State of Testing 2026: changes compared with the previous year',
+        publisher: 'PractiTest · State of Testing · Primary survey report',
+        url: 'https://www.practitest.com/state-of-testing',
+      },
+    ],
+  },
+  {
     id: 'company-quality-transformations',
     title: 'Yahoo, Microsoft, Uber, Google, Spotify, NASA',
-    slides: 'SLIDE 16',
+    slides: 'SLIDE 17',
     summary: 'Company examples of changing how quality is owned and delivered',
     period: 'Research notes · QA organisation changes and engineering practices',
     note: 'The research notes distinguish changes to dedicated QA teams at Yahoo and Microsoft from broader quality engineering practices at Uber, Google, Spotify, and NASA. Uber’s engineering article documents earlier developer-owned testing; it does not establish that Uber eliminated software QA. The LinkedIn articles are secondary summaries. The restructuring report and Reddit discussion are background context, not evidence of a company-wide software QA removal or its quality outcomes. The Yahoo/Microsoft LinkedIn link and Business Insider link could not be independently retrieved when these sources were added.',
@@ -92,7 +107,7 @@ export const sourceGroups = [
   {
     id: 'qa-other-professions',
     title: 'QA in other professions',
-    slides: 'SLIDE 26',
+    slides: 'SLIDE 27',
     summary: 'Quality engineering in physical products requires specialist technical knowledge',
     period: 'Research notes · Aerospace, automotive manufacturing, and hardware QA',
     note: 'The research notes cite the IMI listing for aerospace qualifications, JobDescription.org for manufacturing and measurement systems, and Kevin Thompson’s hardware case study for the need for domain expertise. The Formula 1, amusement-park, and rocket-testing examples have no direct citations in the supplied material. The IMI listing could not be independently retrieved when these sources were added.',
@@ -116,8 +131,8 @@ export const sourceGroups = [
   },
   {
     id: 'llms-reward-expertise',
-    title: 'LLMs reward expertise',
-    slides: 'SLIDE 27',
+    title: 'We need experts',
+    slides: 'SLIDE 28',
     summary: 'Domain expertise helps users ask better questions, evaluate answers, and get more value from LLMs',
     period: '24 July 2026 · Essay on domain expertise and LLM use',
     note: 'Using Terence Tao’s conversation with ChatGPT and his own programming experience, Goedecke argues that experts can identify relevant ideas, challenge weak answers, and suggest better approaches. The article supports the slide’s point that domain knowledge improves how people use LLMs; it is an essay based on examples and experience, not a controlled study.',
@@ -132,7 +147,7 @@ export const sourceGroups = [
   {
     id: 'keith-klain-test-automation',
     title: 'Keith Klain on test automation',
-    slides: 'SLIDE 30',
+    slides: 'SLIDE 31',
     summary: 'Automation’s promised cost savings and the changing value of test-script production',
     period: 'Keith Klain · Video',
     note: 'Source for the slide’s quote about automation costs and AI driving the price of test-script production to zero.',
