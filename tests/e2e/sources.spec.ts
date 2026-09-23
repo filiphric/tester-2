@@ -15,7 +15,7 @@ test('sources remain accessible from the live page without losing the session', 
   await sources.setViewportSize({ width: 390, height: 844 })
   await expect(sources).toHaveURL(/\/sources\?room=sources-rehearsal$/)
   await expect(sources.getByRole('heading', { name: 'Sources', exact: true })).toBeVisible()
-  await expect(sources.locator('.source-list a')).toHaveCount(16)
+  await expect(sources.locator('.source-list a')).toHaveCount(18)
   await expect(sources.locator('.sources-page')).toHaveJSProperty('scrollWidth', 390)
   await sources.setViewportSize({ width: 320, height: 700 })
   await expect(sources.locator('.sources-page')).toHaveJSProperty('scrollWidth', 320)

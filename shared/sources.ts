@@ -147,7 +147,7 @@ export const sourceGroups = [
   {
     id: 'keith-klain-test-automation',
     title: 'Keith Klain on test automation',
-    slides: 'SLIDE 31',
+    slides: 'SLIDE 32',
     summary: 'Automation’s promised cost savings and the changing value of test-script production',
     period: 'Keith Klain · Video',
     note: 'Source for the slide’s quote about automation costs and AI driving the price of test-script production to zero.',
@@ -156,6 +156,26 @@ export const sourceGroups = [
         title: 'To Infinity and Beyond - The Death of Test Engineering - Keith Klain',
         publisher: 'Quality Remarks · YouTube',
         url: 'https://www.youtube.com/watch?v=syyHF0idL64',
+      },
+    ],
+  },
+  {
+    id: 'qodo-agentic-review',
+    title: 'Generation, verification, and review at every step',
+    slides: 'SLIDES 35–36',
+    summary: 'Qodo Agentic Toolbox and AI Code Review',
+    period: 'Qodo · Official product pages',
+    note: 'The Agentic Toolbox brings codebase context, engineering rules, and independent review into coding-agent workflows, including review of committed and uncommitted local changes. Qodo’s AI Code Review applies codebase context, team standards, and ticket requirements to pull request review. These tools illustrate the generation and verification workflow on slide 35 and earlier review checkpoints on slide 36.',
+    links: [
+      {
+        title: 'Agentic Toolbox',
+        publisher: 'Qodo · Codebase context, rules, and local review',
+        url: 'https://www.qodo.ai/features/qodo-agentic-toolbox/',
+      },
+      {
+        title: 'AI Code Review',
+        publisher: 'Qodo · Context-aware pull request review',
+        url: 'https://www.qodo.ai/features/qodo-git/',
       },
     ],
   },

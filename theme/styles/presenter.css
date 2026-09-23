@@ -1,0 +1,27 @@
+/* Keep previews mounted so Slidev can track slide clicks while reading notes. */
+.slidev-presenter div.grid-container.layout3 {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) min-content;
+  grid-template-areas:
+    'note'
+    'bottom';
+}
+
+.slidev-presenter .grid-container.layout3 > .main,
+.slidev-presenter .grid-container.layout3 > .next,
+.slidev-presenter .grid-container.layout3 > .notes-vertical-resizer-left,
+.slidev-presenter .grid-container.layout3 .notes-row-resizer {
+  display: none;
+}
+
+.slidev-presenter .slidev-note-with-clicks {
+  /* Shift Slidev's centered scroll target up to leave more upcoming notes visible. */
+  scroll-padding-block-end: 60%;
+}
+
+.slidev-presenter .slidev-note-with-clicks::after {
+  /* Give the final click markers enough room to reach the same reading position. */
+  content: '';
+  display: block;
+  height: 80%;
+}

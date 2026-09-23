@@ -11,7 +11,7 @@ raw: true
 <!--
 - we’ll move to 17th century Europe 
 - it’s the dawn of technology, companies are being formed, forming global trade, we see commerce taking off
-- it’s also a world that’s reshaping - empires expanding, scientific ideas challenging inherited knowledge, we see first challenges of the traditional thinking
+- it’s also a world that’s reshaping - empires expanding, new scientific ideas challenging inherited knowledge
 - now I want you to imagine, that we enter this era and we pull a person from this era into today’s time 
 - we want to show them the world of today, let them see the difference between the world back then and how the world is today
 - what would you decide to show this person? what do you think would fascinate them? would it be our computers? your iPhones? or would it be our ways of transport? what do you think would fascinate them the most? would you show them AI?
@@ -42,11 +42,10 @@ raw: true
 layout: center
 ---
 
-# <Highlighter>Why?</Highlighter>
+# <Highlighter>Changes.</Highlighter>
 
 <!--
-- if you take a look at the world from 17th century person’s perspective, it’s easy to understand why a supermarket aisle full of spices might fascinate them
-- the lens, through which they are looking at the world lives in a certain context
+- 17th century person’s lens
 - but by the end of 17th century everything changed
 - technological advance drove the price down, and spice has become widely available
 - so why am I talking about all this? 
@@ -75,8 +74,8 @@ layout: center
 
 <!--
 - which is the main reason why today I want to talk about our lens - our view of the world
-- they don't want us as testers, fall into the same biases that the 17th century person may have
-- because just because we can have a lot of something, it’s easily available and super cheap, doesn’t meant that we have become code rich
+- I don't want us as testers, fall into the same biases that the 17th century person may have
+- just because we can have a lot of something, it’s easily available and super cheap, doesn’t meant that we have become code rich
 - today, I want to talk about our perspectives as testers, quality engineers
 - my hope you to be leaving this keynote with your lens adjusted
 -->
@@ -172,8 +171,7 @@ clicks: 1
 - so I want to share some of my observations and learnings about all of this
 - I’ll share some hot takes, 
 - maybe some things that will make you uncomfortable
-- maybe some stuff we may not agree on
-- but I hope we can start having a debate about
+- maybe some stuff we may not agree on but I hope we can start having a debate about
 -->
 
 ---

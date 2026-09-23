@@ -19,7 +19,7 @@ export const agenda = {
     title: 'Our strengths',
     items: [
       'Quality-first approach to software delivery',
-      'Governance of software systems',
+      'Being a generalist',
       'Turning uncertainty into experiments',
     ],
   },

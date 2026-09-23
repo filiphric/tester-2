@@ -249,9 +249,16 @@ layout: center
 
 ---
 layout: quote
+author: me, just now
 ---
 
 # We can’t build the future of testing on the hope that teams will fail without us.
+
+<style>
+:deep(.attribution) {
+  visibility: hidden;
+}
+</style>
 
 <!--
 - but the thing is, this kind of thinking leaves our future dependent on somebody else failing
